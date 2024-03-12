@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { RiArrowDownSLine } from "react-icons/ri";
-import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
+import { Button } from "./ui/button";
+import Socials from "./Socials";
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
               Brief description with insights into myself, my vocational
               journey, and what I engage in professionally.
             </p>
-            {/* socials buttons */}
+            {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
                 <Button className="gap-x-2">
@@ -29,6 +30,11 @@ const Hero = () => {
                 Download CV <Download size={18} />
               </Button>
             </div>
+            {/* socials */}
+            <Socials
+              containerStyles="flex gap-x-6 mx-auto xl:mx-0"
+              iconsStyles="text-foreground text-[22px] hover:text-primary transition-all"
+            />
           </div>
           {/* image */}
           <div className="hidden xl:flex relative">image</div>
