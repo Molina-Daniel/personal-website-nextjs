@@ -20,7 +20,7 @@ const Template = ({ children }: TemplateProps) => {
       <motion.main
         variants={variants}
         initial="hidden"
-        animate="enter"
+        animate="visible"
         transition={{ type: "linear", delay: 0.2, duration: 0.4 }}
       >
         {children}
