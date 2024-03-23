@@ -102,3 +102,9 @@
 .subtitle {
   @apply text-muted-foreground text-lg mb-8 font-light;
 }
+
+/* swiper bullets styles */
+.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  @apply bg-primary;
+}
